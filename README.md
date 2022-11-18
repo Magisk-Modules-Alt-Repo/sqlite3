@@ -4,6 +4,10 @@
 
 This Magisk module provides a statically linked and stripped `sqlite3` binary for ARM aarch64 devices.
 
+## Download
+
+Releases: [SQLite.for.ARM.aarch64.devices-vX.X.XX.zip](https://github.com/rojenzaman/sqlite3-magisk-module/releases)
+
 ## Changelog
 
 2022-11-17: v1.6
