@@ -6,11 +6,17 @@ This Magisk module provides a statically linked and stripped `sqlite3` binary fo
 
 ## Download
 
-Releases: [SQLite.for.ARM.aarch64.devices-vX.X.XX.zip](https://github.com/rojenzaman/sqlite3-magisk-module/releases)
+Releases: [SQLite.for.ARM.aarch64.devices-vX.XX.X.zip](https://github.com/rojenzaman/sqlite3-magisk-module/releases)
 
 ## Changelog
 
+2023-08-24: v3.42.0
+
+- Updated to SQLite 3.42.0.
+- Version scheme was changed.
+
 2022-11-17: v1.6
+
 - Updated to SQLite 3.40.0.
 
 2021-07-26: v1.5
