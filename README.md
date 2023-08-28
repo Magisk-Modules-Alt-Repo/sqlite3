@@ -10,6 +10,10 @@ Releases: [SQLite.for.ARM.aarch64.devices-vX.XX.X.zip](https://github.com/rojenz
 
 ## Changelog
 
+2023-08-28: v3.43.0
+
+- Updated to SQLite 3.43.0.
+
 2023-08-24: v3.42.0
 
 - Updated to SQLite 3.42.0.
