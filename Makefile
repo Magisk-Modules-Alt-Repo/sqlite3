@@ -1,6 +1,6 @@
 ZIP_FILES := $(filter-out Makefile .git%,$(wildcard *))
-VERSION = v3.43.0
-VERSIONCODE = 3430000
+VERSION = v3.43.1
+VERSIONCODE = 3430100
 .PHONY: zip module.prop system/xbin/sqlite3
 
 default: zip module.prop system/xbin/sqlite3
