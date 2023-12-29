@@ -1,17 +1,25 @@
-ZIP_FILES := $(filter-out Makefile .git%,$(wildcard *))
+ZIP_FILES := customize.sh META-INF module.prop system
 VERSION = v3.44.2
-VERSIONCODE = 3440200
-.PHONY: zip module.prop system/xbin/sqlite3
+VERSIONCODE = 20231229
+.PHONY: module.prop system/bin zip
 
-default: zip module.prop system/xbin/sqlite3
+default: module.prop system/bin zip
 
 zip:
-	rm -f SQLite.for.ARM.aarch64.devices-$(VERSION).zip
-	zip -0 -r SQLite.for.ARM.aarch64.devices-$(VERSION).zip $(ZIP_FILES)
+	rm -f SQLite-$(VERSION)-for-magisk.multi-arch.zip
+	zip -9 -r SQLite-$(VERSION)-for-magisk.multi-arch.zip $(ZIP_FILES)
 
 module.prop:
 	sed -i 's/version=.*$$/version=$(VERSION)/' module.prop
 	sed -i 's/versionCode=.*$$/versionCode=$(VERSIONCODE)/' module.prop
 
-system/xbin/sqlite3:
-	cp ../sqlite3-android/libs/armeabi-v7a/sqlite3-static system/xbin/sqlite3
+sqlite3-android:
+	make -C ../sqlite3-android clean
+	make -C ../sqlite3-android
+
+system/bin:
+	mkdir -p system/bin
+	cp ../sqlite3-android/libs/arm64-v8a/sqlite3-static	system/bin/sqlite3.arm64
+	cp ../sqlite3-android/libs/armeabi-v7a/sqlite3-static	system/bin/sqlite3.arm
+	cp ../sqlite3-android/libs/x86_64/sqlite3-static	system/bin/sqlite3.x64
+	cp ../sqlite3-android/libs/x86/sqlite3-static		system/bin/sqlite3.x86

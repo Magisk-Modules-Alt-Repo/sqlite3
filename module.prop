@@ -1,6 +1,6 @@
 id=sqlite3
-name=SQLite for ARM aarch64 devices
+name=SQLite for arm, arm64, x86 and x64 devices
 version=v3.44.2
-versionCode=3440200
-author=ianmacd,Howard,Rojen
-description=Provides a statically linked sqlite3 binary for ARM aarch64 devices
+versionCode=20231229
+author=Rojen Zaman
+description=Provides a statically linked sqlite3 binary for arm, arm64, x86 and x64 devices
