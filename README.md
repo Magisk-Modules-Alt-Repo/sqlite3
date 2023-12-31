@@ -6,8 +6,13 @@ This Magisk module provides a statically linked and stripped `sqlite3` binary fo
 
 ## Tested Devices
 
- - Lenovo Tab M10 Plus Gen 3
- - LDPlayer 9
+ - arm64-v8a:
+   - **Lenovo Tab M10 Plus Gen 3**
+   - **Xiaomi MI 6**
+   - **Samsung Galaxy S6 Edge**
+ - x86_64:
+   - **LDPlayer 9**
+   
 
 ## Download
 
