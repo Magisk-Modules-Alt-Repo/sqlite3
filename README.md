@@ -12,8 +12,8 @@ This Magisk module provides a statically linked and stripped `sqlite3` binary fo
    - **Samsung Galaxy S6 Edge**
  - x86_64:
    - **LDPlayer 9**
+   - **Waydroid**
    
-
 ## Download
 
 Releases: [SQLite-vX.XX.X-for-magisk.multi-arch.zip](https://github.com/rojenzaman/sqlite3-magisk-module/releases)
