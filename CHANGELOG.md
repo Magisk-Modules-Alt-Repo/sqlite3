@@ -1,5 +1,9 @@
 ## Changelog
 
+2024-01-16: 2024.01.16
+
+-  Updated to SQLite v3.45.0.
+
 2023-12-29: 2023.12.29
 
 - Multi-arch support.
