@@ -1,6 +1,6 @@
 id=sqlite3
 name=SQLite for arm, arm64, x86 and x64 devices
-version=v3.45.1
-versionCode=20240204
+version=v3.45.2
+versionCode=20240314
 author=Rojen Zaman
 description=Provides a statically linked sqlite3 binary for arm, arm64, x86 and x64 devices
